@@ -1,7 +1,6 @@
 '''
 It was in the 1997-98 season that Ranchi saw the rise of the Captain Cool in the interschool trophy between DAV Jawahar Vidhya Mandir and Kendriya School. It was in that match Dhoni convinced Banerjee to be the opener and justified it with a double century.
 Write a program to display the details of the match with Team name, Scores of the team and Overs played.
-'''
 Refer sample input and output for formatting specifications.
 [All text in bold corresponds to input and the rest corresponds to output]
 Sample Input and Output:
@@ -28,3 +27,31 @@ Team 2:
 Name:  Kendriya School
 Score: 110
 Overs played: 18
+'''
+# Program to display the details of a cricket match between two teams
+
+# Function to display match details
+def display_match_details(team1, score1, overs1, team2, score2, overs2):
+    print("Match Details:")
+    print("Team 1:")
+    print(f"Name: {team1}")
+    print(f"Score: {score1}")
+    print(f"Overs played: {overs1}")
+    
+    print("Team 2:")
+    print(f"Name: {team2}")
+    print(f"Score: {score2}")
+    print(f"Overs played: {overs2}")
+
+# Input details for Team 1
+team1_name = "DAV Jawahar Vidhya Mandir"
+team1_score = 150
+team1_overs = 20
+
+# Input details for Team 2
+team2_name = "Kendriya School"
+team2_score = 110
+team2_overs = 18
+
+# Display the match details using the function
+display_match_details(team1_name, team1_score, team1_overs, team2_name, team2_score, team2_overs)
